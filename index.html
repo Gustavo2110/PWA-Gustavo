@@ -1,0 +1,95 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Sitio Ajax</title>
+
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta name="description" content="Mis sitios Ajax.com es una empresa dedicada a la creación y el diselo de aplicaciones ricas de internet
+    utilizando la tecnología Ajax" />
+
+  <!-- compativilidad con dispositivos moviles -->
+  <meta name="theme-color" content="#F0DB4F">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <!-- Compativilidad con Iphone -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- splash -->
+  <link rel="shortcut icon" href="image/png">
+  <!-- imagen que se instala en el dispositivo -->
+  <link rel="apple-touch-icon" href="./pwa/images/icon/icon-192x192.png">
+  <link rel="apple-touch-startup-image" href="./pwa/images/icon/icon-192x192.png">
+
+
+  <!-- icono del navegador -->
+  <link rel="shortcut icon" href="./pwa/images/icon/rappi-192.png" />
+
+  <!--PWA-->
+  <link rel="manifest" href="./manifest.webmanifest">
+
+  <!-- Estilos css -->
+  <link rel="stylesheet" href="./css/estilos.css">
+
+  <!-- Script ajax -->
+  <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js"></script>
+
+</head>
+
+<body>
+
+
+
+  <div id="container">
+    <div id="divCargando">
+      <h1 class="text-cargando">Por Favor Espere...</h1>
+    </div>
+
+    <div id="header">
+      <h1>Rappi PWA</h1>
+      <!-- End #header -->
+    </div>
+
+
+    <div id="siderbar1">
+      <h3 id="inicio">Home</h3>
+      <h3 id="quienes">¿Quienes Somos?</h3>
+      <h3 id="servicios">Servicios</h3>
+      <h3 id="clientes">Clientes</h3>
+      <h3 id="contacto">Contacto</h3>
+      <!-- End #siderbar1 -->
+    </div>
+
+
+    <div id="mainContainer">
+      <h1>Bienvenidos</h1>
+      <p style="font-weight: bold;"></p>Rappi es una empresa dedicada a la venta de alimentos con servicio a domicilio
+        en donde con solo un clic podemos revisar un multiple catalogo de alimentos, y
+        comprar dicho alimento y ser enviado a nuestro domicilio en un lapso de tiempo
+        segun la ubicacion del restaurante donde compramos dicho alimento.</p><br>
+      <img style="width: 36%; margin: 20px;" class="img_rappi" src="pwa/images/rappi.png" alt="rappi_description">
+      <img style="width: 30%;" class="img_rappi" src="pwa/images/rappi.jpg" alt="rappi_img">
+      <!-- End #maninContent -->
+    </div>
+
+    <br class="clearfloat" />
+
+    <div id="footer">
+      <p>(C) 2022 - Realizado por Gustavo Chan Cauich | Sitio WEB | PWA usando Ajax</p>
+      <!-- End #footer -->
+    </div>
+
+    <!-- End #container -->
+  </div>
+
+ <!-- script main -->
+ <script src="./js/index.js"></script>
+ <!-- Llamando a service workers -->
+ <script src="./regist_serviceWorkers.js"></script>
+</body>
+
+</html>
